@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Products - Yuvraj Medical Store</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+
+    <!-- Header -->
+    <header>
+
+        <h1>Yuvraj Medical Store</h1>
+
+        <p>Established in 2010</p>
+
+    </header>
+
+
+    <!-- Navigation -->
+    <nav>
+
+        <a href="index.html">Home</a>
+
+        <a href="products.html">Products</a>
+
+        <a href="about.html">About Us</a>
+
+        <a href="contact.html">Contact Us</a>
+
+        <a href="login.html">Login</a>
+
+        <a href="cart.html">Cart 🛒</a>
+
+        <a href="wishlist.html">Wishlist ❤️</a>
+
+    </nav>
+
+
+    <!-- Products -->
+    <main>
+
+        <section>
+
+            <h2>Our Products</h2>
+
+            <p>
+                Browse our healthcare and medical products.
+            </p>
+
+
+            <!-- Search -->
+            <input type="text"
+                   id="searchBox"
+                   placeholder="Search products..."
+                   onkeyup="searchProducts()">
+
+            <br><br>
+
+
+            <!-- Category Filter -->
+            <select id="categoryFilter"
+                    onchange="filterProducts()">
+
+                <option value="all">
+                    All Categories
+                </option>
+
+                <option value="medicine">
+                    Medicines
+                </option>
+
+                <option value="vitamin">
+                    Vitamins
+                </option>
+
+                <option value="firstaid">
+                    First Aid
+                </option>
+
+                <option value="equipment">
+                    Healthcare Equipment
+                </option>
+
+                <option value="personalcare">
+                    Personal Care
+                </option>
+
+                <option value="babycare">
+                    Baby Care
+                </option>
+
+            </select>
+
+            <br><br>
+
+
+            <!-- Product 1 -->
+            <div class="product medicine">
+
+                <img src="images/paracetamol.jpg"
+                     alt="Paracetamol 500mg">
+
+                <h3>💊 Paracetamol 500mg</h3>
+
+                <p>
+                    Commonly used for temporary relief
+                    from fever and pain.
+                </p>
+
+                <h3>₹30</h3>
+
+                <button
+                    onclick="addToCart('Paracetamol 500mg', 30)">
+                    Add to Cart
+                </button>
+
+                <button
+                    onclick="buyNow('Paracetamol 500mg', 30)">
+                    Buy Now
+                </button>
+
+                <button
+                    onclick="addToWishlist('Paracetamol 500mg', 30)">
+                    ❤️ Wishlist
+                </button>
+
+            </div>
+
+
+            <!-- Product 2 -->
+            <div class="product vitamin">
+
+                <img src="images/vitamin-c.jpg"
+                     alt="Vitamin C Tablets">
+
+                <h3>💪 Vitamin C Tablets</h3>
+
+                <p>
+                    Vitamin supplement for daily
+                    nutritional support.
+                </p>
+
+                <h3>₹120</h3>
+
+                <button
+                    onclick="addToCart('Vitamin C Tablets', 120)">
+                    Add to Cart
+                </button>
+
+                <button
+                    onclick="buyNow('Vitamin C Tablets', 120)">
+                    Buy Now
+                </button>
+
+                <button
+                    onclick="addToWishlist('Vitamin C Tablets', 120)">
+                    ❤️ Wishlist
+                </button>
+
+            </div>
+
+
+            <!-- Product 3 -->
+            <div class="product firstaid">
+
+                <img src="images/first-aid.jpg"
+                     alt="First Aid Kit">
+
+                <h3>🩹 First Aid Kit</h3>
+
+                <p>
+                    Useful healthcare items for
+                    basic first aid.
+                </p>
+
+                <h3>₹299</h3>
+
+                <button
+                    onclick="addToCart('First Aid Kit', 299)">
+                    Add to Cart
+                </button>
+
+                <button
+                    onclick="buyNow('First Aid Kit', 299)">
+                    Buy Now
+                </button>
+
+                <button
+                    onclick="addToWishlist('First Aid Kit', 299)">
+                    ❤️ Wishlist
+                </button>
+
+            </div>
+
+
+            <!-- Product 4 -->
+            <div class="product equipment">
+
+                <img src="images/thermometer.jpg"
+                     alt="Digital Thermometer">
+
+                <h3>🌡️ Digital Thermometer</h3>
+
+                <p>
+                    Digital device for measuring
+                    body temperature.
+                </p>
+
+                <h3>₹199</h3>
+
+                <button
+                    onclick="addToCart('Digital Thermometer', 199)">
+                    Add to Cart
+                </button>
+
+                <button
+                    onclick="buyNow('Digital Thermometer', 199)">
+                    Buy Now
+                </button>
+
+                <button
+                    onclick="addToWishlist('Digital Thermometer', 199)">
+                    ❤️ Wishlist
+                </button>
+
+            </div>
+
+
+            <!-- Product 5 -->
+            <div class="product personalcare">
+
+                <img src="images/sanitizer.jpg"
+                     alt="Hand Sanitizer">
+
+                <h3>🧴 Hand Sanitizer</h3>
+
+                <p>
+                    Hand hygiene product for
+                    everyday use.
+                </p>
+
+                <h3>₹89</h3>
+
+                <button
+                    onclick="addToCart('Hand Sanitizer', 89)">
+                    Add to Cart
+                </button>
+
+                <button
+                    onclick="buyNow('Hand Sanitizer', 89)">
+                    Buy Now
+                </button>
+
+                <button
+                    onclick="addToWishlist('Hand Sanitizer', 89)">
+                    ❤️ Wishlist
+                </button>
+
+            </div>
+
+
+            <!-- Product 6 -->
+            <div class="product babycare">
+
+                <img src="images/baby-care.jpg"
+                     alt="Baby Care Kit">
+
+                <h3>👶 Baby Care Kit</h3>
+
+                <p>
+                    Basic care products for
+                    babies.
+                </p>
+
+                <h3>₹399</h3>
+
+                <button
+                    onclick="addToCart('Baby Care Kit', 399)">
+                    Add to Cart
+                </button>
+
+                <button
+                    onclick="buyNow('Baby Care Kit', 399)">
+                    Buy Now
+                </button>
+
+                <button
+                    onclick="addToWishlist('Baby Care Kit', 399)">
+                    ❤️ Wishlist
+                </button>
+
+            </div>
+
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            © 2026 Yuvraj Medical Store.
+            All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

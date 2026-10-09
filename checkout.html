@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Checkout - Yuvraj Medical Store</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+
+        <h1>Yuvraj Medical Store</h1>
+
+        <p>Established in 2010</p>
+
+    </header>
+
+
+    <!-- Navigation -->
+    <nav>
+
+        <a href="index.html">Home</a>
+
+        <a href="products.html">Products</a>
+
+        <a href="about.html">About Us</a>
+
+        <a href="contact.html">Contact Us</a>
+
+        <a href="login.html">Login</a>
+
+        <a href="cart.html">Cart</a>
+
+    </nav>
+
+
+    <!-- Checkout -->
+    <main>
+
+        <section>
+
+            <h2>Checkout</h2>
+
+            <form onsubmit="placeOrder(event)">
+
+                <label>Full Name:</label><br>
+
+                <input type="text"
+                       placeholder="Enter your full name"
+                       required>
+
+                <br><br>
+
+
+                <label>Mobile Number:</label><br>
+
+                <input type="tel"
+                       placeholder="Enter mobile number"
+                       required>
+
+                <br><br>
+
+
+                <label>Email:</label><br>
+
+                <input type="email"
+                       placeholder="Enter your email"
+                       required>
+
+                <br><br>
+
+
+                <label>Delivery Address:</label><br>
+
+                <textarea rows="4"
+                          placeholder="Enter your complete address"
+                          required></textarea>
+
+                <br><br>
+
+
+                <label>City:</label><br>
+
+                <input type="text"
+                       placeholder="Enter your city"
+                       required>
+
+                <br><br>
+
+
+                <label>Payment Method:</label><br>
+
+                <select required>
+
+                    <option value="">
+                        Select Payment Method
+                    </option>
+
+                    <option>
+                        Cash on Delivery
+                    </option>
+
+                    <option>
+                        UPI
+                    </option>
+
+                    <option>
+                        Debit / Credit Card
+                    </option>
+
+                </select>
+
+                <br><br>
+
+
+                <h3>
+                    Total Amount:
+                    ₹<span id="checkoutTotal">0</span>
+                </h3>
+
+                <br>
+
+                <button type="submit">
+                    Place Order
+                </button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            © 2026 Yuvraj Medical Store.
+            All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
